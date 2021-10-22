@@ -1,0 +1,121 @@
+/*-- Home --*/
+
+.home{
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('/src/assets/home/background-home-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+
+    padding: 15% 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__textbox{
+        max-width: 450px;
+
+        h2{
+            margin-top: 24px;
+        }
+
+        p{
+            margin-top: 24px;
+        }
+    }
+
+    &__explore{
+        position: relative;
+        width: 274px;
+        aspect-ratio: 1/1;
+
+        background: var(--light--clr);
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        a{
+            color: var(--dark--clr);
+            font-family: var(--bellefair--fnt);
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-decoration: none;
+
+            z-index: 100;
+        }
+
+        // .bg--hover{
+        //     position: absolute;
+
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+
+        //     width: 274px;
+        //     aspect-ratio: 1/1;
+
+        //     background: white;
+        //     border-radius: 50%;
+
+        //     box-sizing: content-box;
+
+        //     transition: 0.1s;
+            
+        //     z-index: 1;
+        // }
+
+        // &:hover .bg--hover{
+        //     border: 88px solid rgba(255, 255, 255, 0.1);
+
+        //     transition: 0.1s;
+        // }
+    }
+}
+
+@media (max-width: 768px) {
+    .home{
+        padding: 202px 0 0 0;
+
+        background: url('/src/assets/home/background-home-tablet.jpg');
+
+        flex-direction: column;
+
+        &__textbox{
+            text-align: center;
+        }
+
+        &__explore{
+            width: 242px;
+            aspect-ratio: 1/1;
+
+            margin: 156px 0 52px 0;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .home{
+        padding: 124px 24px 0 24px;
+
+        &__textbox{
+
+            h2{
+                margin-top: 16px;
+            }
+
+            p{
+                margin-top: 16px;
+            }
+        }
+
+        &__explore{
+            margin: 80px 0 48px 0;
+        }
+    }
+}
