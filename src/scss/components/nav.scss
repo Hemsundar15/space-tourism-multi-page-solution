@@ -17,7 +17,6 @@
     z-index: 10000;
 
     &__logo{
-        position: relative;
 
         img{
             width: 48px;
@@ -107,7 +106,10 @@
         padding: 24px;
 
         &__logo{
-            width: 40px;
+
+            img{
+                width: 40px;
+            }
         }
 
         &__links{
