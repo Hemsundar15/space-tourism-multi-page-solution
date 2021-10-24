@@ -10,6 +10,8 @@
     justify-content: space-around;
 
     background: url(/src/assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
 
     &__imageholder{
         h1{
@@ -153,6 +155,10 @@
         padding: 94px 24px 0 24px;
 
         justify-content: space-around;
+
+        background: url("/src/assets/destination/background-destination-mobile.jpg");
+        background-position: center;
+        background-size: cover;
 
         &__imageholder{
 
