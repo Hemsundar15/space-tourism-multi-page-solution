@@ -21,6 +21,7 @@
 	font-family: var(--bellefair--fnt);
 	font-size: 56px;
 	font-weight: 400;
+	text-transform: uppercase;
 
 	color: var(--light--clr);
 }
@@ -29,6 +30,7 @@
 	font-family: var(--bellefair--fnt);
 	font-size: 32px;
 	font-weight: 400;
+	text-transform: uppercase;
 
 	color: var(--light--clr);
 }
@@ -61,6 +63,21 @@
 	color: var(--fog--clr);
 }
 
+.subheading--3{
+	font-family: var(--barlow-condensed--fnt);
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	color: var(--light--clr);
+
+	span{
+		margin-right: 24px;
+
+		color: var(--half-transparent--clr);
+	}
+}
+
 .nav__text{
 	font-family: var(--barlow-condensed--fnt);
 	font-size: 16px;
@@ -91,6 +108,14 @@
 		font-size: 80px;
 	}
 
+	.heading--3{
+		font-size: 40px;
+	}
+
+	.heading--4{
+		font-size: 24px;
+	}
+
 	.heading--5{
 		font-size: 20px;
 	}
@@ -116,6 +141,14 @@
 
 	.heading--2{
 		font-size: 56px;
+	}
+
+	.heading--3{
+		font-size: 24px;
+	}
+
+	.heading--4{
+		font-size: 16px;
 	}
 
 	.heading--5{

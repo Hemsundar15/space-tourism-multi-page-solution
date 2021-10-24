@@ -20,6 +20,10 @@ module.exports = {
       filename: "destination.html",
       template: "./src/public/destination.html", 
     }),
+    new HtmlWebpackPlugin({ 
+      filename: "crew.html",
+      template: "./src/public/crew.html", 
+    }),
   ],
 
   module: {
