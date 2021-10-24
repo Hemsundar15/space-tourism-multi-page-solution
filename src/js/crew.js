@@ -1,4 +1,6 @@
-import data from '../data.json';
+import '../scss/style.scss';
+import data from './data.json';
+import Nav from './components/nav'
 
 import Douglas from '/src/assets/crew/image-douglas-hurley.webp';
 import Mark from '/src/assets/crew/image-mark-shuttleworth.webp';

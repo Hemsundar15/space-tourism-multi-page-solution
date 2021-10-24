@@ -1,4 +1,7 @@
-import data from '../data.json';
+import '../scss/style.scss';
+import data from './data.json';
+import Nav from './components/nav'
+
 import Moon from '/src/assets/destination/image-moon.webp';
 import Mars from '/src/assets/destination/image-mars.webp';
 import Europa from '/src/assets/destination/image-europa.webp';

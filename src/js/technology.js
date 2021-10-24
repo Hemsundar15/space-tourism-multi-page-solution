@@ -1,4 +1,7 @@
-import data from '../data.json';
+import '../scss/style.scss';
+import data from './data.json';
+import Nav from './components/nav'
+
 import Vehicle from '/src/assets/technology/image-launch-vehicle-portrait.jpg';
 import Spaceport from '/src/assets/technology/image-spaceport-portrait.jpg';
 import Capsule from '/src/assets/technology/image-space-capsule-portrait.jpg';

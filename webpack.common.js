@@ -4,7 +4,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    index: './src/js/script.js',
+    index: './src/js/index.js',
+    destination: '/src/js/destination.js',
+    crew: '/src/js/crew.js',
+    technology: '/src/js/technology.js',
+  },
+  
+  optimization: {
+    splitChunks: {
+        chunks: 'all'
+    }
   },
   
   plugins: [
@@ -14,19 +23,23 @@ module.exports = {
 
     new HtmlWebpackPlugin({ 
       filename: "index.html",
-      template: "./src/public/index.html", 
+      template: "./src/public/index.html",
+      chunks: ["index"], 
     }),
     new HtmlWebpackPlugin({ 
       filename: "destination.html",
       template: "./src/public/destination.html", 
+      chunks: ['destination']
     }),
     new HtmlWebpackPlugin({ 
       filename: "crew.html",
       template: "./src/public/crew.html", 
+      chunks: ["crew"],
     }),
     new HtmlWebpackPlugin({ 
       filename: "technology.html",
-      template: "./src/public/technology.html", 
+      template: "./src/public/technology.html",
+      chunks: ['technology'],
     }),
   ],
 
