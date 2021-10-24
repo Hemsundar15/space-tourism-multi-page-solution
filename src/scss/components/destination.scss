@@ -1,0 +1,190 @@
+/*-- Destination --*/
+
+.destination{
+    min-height: 100vh;
+    width: 100%;
+    padding: 136px 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: url(/src/assets/destination/background-destination-desktop.jpg);
+
+    &__imageholder{
+        h1{
+            color: var(--light--clr);
+            font-weight: 400;
+
+            span{
+                margin-right: 28px;
+            }
+        }
+
+        #destination__image{
+            margin-top: 97px;
+        }
+    }
+
+    &__textbox{
+        max-width: 445px;
+    
+        .destination__nav{
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            list-style: none;
+
+            input{
+                display: none;
+            }
+
+            label{
+                position: relative;
+                padding: 0 0 14px 0;
+
+                cursor: pointer;
+
+                &::after{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    width: 0;
+                    background: var(--light--clr);
+                    transition: 0.4s;
+                }
+
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+
+            input[type="radio"]:checked + label{
+
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+
+        #destination__title{
+            margin-top: 37px;
+        }
+
+        #destination__description{
+            margin-top: 14px;
+            padding: 0 0 54px 0;
+            border-bottom: 1px solid white;
+        }
+    
+        .destination__stats{
+            margin-top: 28px;
+
+            display: flex;
+            align-items: center;
+            gap: 80px;
+
+            h6{
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .destination{
+        padding: 136px 38px 0 38px;
+
+        flex-direction: column;
+        align-items: center;
+
+        background: url("/src/assets/destination/background-destination-tablet.jpg");
+        background-position: center;
+        background-size: cover;
+        
+        &__imageholder{
+            width: 100%;
+            text-align: center;
+
+            h1{
+                text-align: left;
+            }
+
+            #destination__image{
+                width: 300px;
+                margin-top: 60px;
+            }
+        }
+
+        &__textbox{
+            max-width: 575px;
+
+            margin-top: 53px;
+            text-align: center;
+            
+            .destination__nav{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #destinatio__title{
+                margin-top: 32px;
+            }
+
+            #destination__description{
+                margin-top: 8px;
+                padding: 0 0 49px 0;
+            }
+
+            .destination__stats{
+                padding: 0 0 36px 0;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .destination{
+        padding: 94px 24px 0 24px;
+
+        justify-content: space-around;
+
+        &__imageholder{
+
+            h1{
+                text-align: center;
+            }
+
+            #destination__image{
+                width: 170px;
+            }
+        }
+
+        &__textbox{
+            width: 100%;
+
+            margin-top: 26px;
+
+            #destination__title{
+                margin-top: 20px;
+            }
+
+            #destination__description{
+                max-width: 325px;
+                margin: 0 auto;
+                margin-top: 1px;
+                padding: 0 0 32px 0;
+            }
+
+            .destination__stats{
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+    }
+}

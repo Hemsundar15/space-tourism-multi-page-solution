@@ -1,12 +1,19 @@
 import '../scss/style.scss';
+import Nav from './components/nav';
+import destination from './components/destination';
 
-const navHamburger = document.querySelector('.nav__hamburger');
+// const destinationLocations = document.querySelectorAll('.destination__locations');
+// const destinationNavLinks = document.querySelectorAll('.destination__navlinks');
 
-navHamburger.addEventListener("click", () => {
-    const navLinks = document.querySelector(".nav__links");
-    const html = document.querySelector("html");
 
-    navHamburger.classList.toggle("nav__hamburger--active");
-    navLinks.classList.toggle("nav__links--active");
-    html.classList.toggle("html--active");
-});
+
+// destinationNavLinks.forEach((e) => {
+//     e.addEventListener("click", () => {
+//         for (let i = 0; i < destinationLocations.length; i++) {
+//             if (destinationLocations[i].checked) {
+//                 const num = [i];
+//                 console.log(num);
+//             }
+//         }
+//     });
+// });

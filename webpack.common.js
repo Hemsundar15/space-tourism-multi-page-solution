@@ -8,8 +8,18 @@ module.exports = {
   },
   
   plugins: [
-    new HtmlWebpackPlugin({ template: "./src/public/index.html", }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].[hash].css",
+    }),
+
+    new HtmlWebpackPlugin({ 
+      filename: "index.html",
+      template: "./src/public/index.html", 
+    }),
+    new HtmlWebpackPlugin({ 
+      filename: "destination.html",
+      template: "./src/public/destination.html", 
+    }),
   ],
 
   module: {
@@ -28,7 +38,7 @@ module.exports = {
         use: ["html-loader"],
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|webp)/,
         type: "asset/resource",
       },
     ],

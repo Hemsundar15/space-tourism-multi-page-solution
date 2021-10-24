@@ -12,6 +12,7 @@
 	font-family: var(--bellefair--fnt);
 	font-size: 100px;
 	font-weight: 400;
+	text-transform: uppercase;
 
 	color: var(--light--clr);
 }
@@ -45,6 +46,9 @@
 	font-family: var(--bellefair--fnt);
 	font-size: 28px;
 	font-weight: 400;
+	text-transform: uppercase;
+
+	color: var(--light--clr);
 }
 
 .subheading--2{
@@ -52,6 +56,9 @@
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 2.35px;
+	text-transform: uppercase;
+
+	color: var(--fog--clr);
 }
 
 .nav__text{
@@ -80,6 +87,10 @@
 }
 
 @media (max-width: 768px) {
+	.heading--2{
+		font-size: 80px;
+	}
+
 	.heading--5{
 		font-size: 20px;
 	}
@@ -94,12 +105,17 @@
 
 	.para{
 		font-size: 16px;
+		line-height: 28px;
 	}
 }
 
 @media (max-width: 426px) {
 	.heading--1{
 		font-size: 80px;
+	}
+
+	.heading--2{
+		font-size: 56px;
 	}
 
 	.heading--5{
@@ -112,5 +128,6 @@
 
 	.para{
 		font-size: 15px;
+		line-height: 25px;
 	}
 }
